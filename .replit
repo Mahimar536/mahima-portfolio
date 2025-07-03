@@ -17,3 +17,14 @@ publicDir = "dist"
 [[ports]]
 localPort = 5173
 externalPort = 80
+
+[workflows]
+
+[[workflows.workflow]]
+name = "git"
+mode = "parallel"
+author = 7297893
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "git init"
